@@ -1,0 +1,114 @@
+
+/* Reset default browser spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main layout */
+.Layout {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Header component */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 40px;
+  background-color: white;
+}
+
+/* Sidebar and Mainbar container */
+.Content {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  min-height: 350px;
+}
+
+/* Sidebar: 25% */
+.sidebar {
+  flex: 0 0 30%;
+  background-color: lightblue;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+/* Mainbar: remaining space */
+.mainbar {
+  flex: 1;
+  background-color: lightgray;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+/* Footer component */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  min-height: 100px;
+  margin: 0 15px;
+  padding: 25px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+}
+
+/* Footer text */
+.footer h1 {
+  font-size: 32px;
+}
+
+.footer p {
+  font-size: 18px;
+}
+
+/* Normal link color */
+.footer a {
+  color: yellow;
+  text-decoration: none;
+}
+
+/* When the mouse hovers over the link */
+.footer a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+/* After the link has been visited */
+.footer a:visited {
+  color: lightgreen;
+}
+
+
+/* Mobile responsive layout 
+@media (max-width: 600px) {
+  .header {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .Content {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .mainbar {
+    min-height: 150px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+} */
